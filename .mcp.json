@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dealermarkets-admin": {
+      "type": "http",
+      "url": "https://mcp.dealermarkets.com/admin/mcp"
+    }
+  }
+}
