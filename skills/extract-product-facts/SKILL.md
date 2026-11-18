@@ -69,6 +69,7 @@ Tag every topic that applies. Write each territory rule as its own fact, not ins
 4. **No marketing fluff** ("peace of mind", "industry leading"): only facts a dealer could act on.
 5. **quote:** a verbatim excerpt (up to ~25 words) from the cited page, copied exactly from the text `catalog_get_documents` returned. The server checks it is on that page.
 6. **source:** the document id and page the fact came from. Signed-out dealers only see facts from Consumer Facing documents:
+   - When several documents say the same thing (for example one brochure per plan with the same terms), record it **once**: one fact listing every plan it applies to, citing one of the documents. Write separate facts only where the terms differ.
    - When a Consumer Facing and a Dealer Only document say the same thing, record it once, citing the **Consumer Facing** one.
    - When the Consumer Facing document says only part of it, write two facts: one with just what the Consumer Facing document says (citing it), and one with the dealer document's fuller version (citing that).
    - A fact contains only what its cited document says. Never merge terms from a deck, FAQ, contract or dealer summary into a fact citing a Consumer Facing document, and never mention a dealer document in its text.
