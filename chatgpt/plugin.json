@@ -8,7 +8,7 @@
     "url": "https://www.dealermarkets.com"
   },
   "homepage": "https://www.dealermarkets.com",
-  "repository": "https://github.com/Dealermarkets/dealermarkets-plugin",
+  "repository": "https://github.com/Dealermarkets/dealermarkets-admin-plugin",
   "license": "SEE LICENSE IN LICENSE",
   "keywords": ["dealermarkets", "admin", "catalog"]
 }
