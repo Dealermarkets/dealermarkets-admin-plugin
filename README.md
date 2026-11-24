@@ -1,10 +1,10 @@
-# DealerMarkets Admin plugin (private)
+# DealerMarkets Admin plugin
 
-For DealerMarkets App Admins (Jim, Mike), not for dealers. Keep this repo private and never submit the plugin to Claude's or ChatGPT's directory. The public dealer plugin lives in [`Dealermarkets/dealermarkets-plugin`](https://github.com/Dealermarkets/dealermarkets-plugin).
+For DealerMarkets App Admins only, not for dealers. It isn't listed in Claude's or ChatGPT's plugin directory. The dealer plugin is a separate plugin.
 
 - **Connector:** the DealerMarkets admin connector (`/admin/mcp`), App Admin sign-in only.
 - **Skill:** `extract-product-facts` reads a product's stored documents (`catalog_get_documents` with `text: true`), writes the product's search facts and saves them (`catalog_facts_upload_link` with curl, or `catalog_set_product_facts`). The server files each fact as public or dealer-only by its document's visibility and refuses the save if any fact fails a check.
-- Status: proof of concept (2026-11-18). The tools are on MCP branch `chat-extraction-poc` (`airdevco/dealermarkets-mcp`), against Bubble branch `facts-json-2`. Plan: `docs/plans/chat-fact-extraction-plan.md` in the MCP repo.
+- Status: proof of concept. The skill needs connector tools that aren't released yet.
 
 ## Install
 
