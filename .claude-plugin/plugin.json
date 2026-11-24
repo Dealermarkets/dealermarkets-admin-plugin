@@ -1,8 +1,8 @@
 {
   "name": "dealermarkets-admin",
   "displayName": "DealerMarkets Admin",
-  "version": "0.1.0",
-  "description": "For DealerMarkets App Admins: extract each product's search facts from its documents with the DealerMarkets admin connector. Private; not listed in any directory.",
+  "version": "0.2.0",
+  "description": "For DealerMarkets App Admins: create and update products on DealerMarkets with the admin connector. App Admin sign-in only.",
   "author": {
     "name": "DealerMarkets, LLC",
     "url": "https://www.dealermarkets.com"

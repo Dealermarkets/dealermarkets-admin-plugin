@@ -4,14 +4,14 @@
 set -eu
 
 root="$(cd "$(dirname "$0")/.." && pwd)"
-name="$(sed -n 's/^  "name": "\(.*\)",$/\1/p' "$root/chatgpt/plugin.json")"
-version="$(sed -n 's/^  "version": "\(.*\)",$/\1/p' "$root/chatgpt/plugin.json")"
+name="$(sed -n 's/^  "name": "\(.*\)",$/\1/p' "$root/plugin.json")"
+version="$(sed -n 's/^  "version": "\(.*\)",$/\1/p' "$root/plugin.json")"
 out="$root/dist/$name-$version.zip"
 stage="$(mktemp -d)"
 trap 'rm -rf "$stage"' EXIT
 
-cp "$root/chatgpt/plugin.json" "$root/chatgpt/mcp.json" "$root/LICENSE" "$stage/"
-cp -R "$root/skills" "$stage/skills"
+cp "$root/plugin.json" "$root/mcp.json" "$root/LICENSE" "$stage/"
+[ -d "$root/skills" ] && cp -R "$root/skills" "$stage/skills"
 [ -d "$root/assets" ] && cp -R "$root/assets" "$stage/assets"
 
 mkdir -p "$root/dist"

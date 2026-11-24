@@ -3,7 +3,7 @@
   "mcpServers": {
     "dealermarkets-admin": {
       "type": "streamable-http",
-      "url": "https://mcp.dealermarkets.com/admin/mcp"
+      "url": "https://dealermarkets-mcp.dealermarkets.workers.dev/admin/mcp"
     }
   }
 }
